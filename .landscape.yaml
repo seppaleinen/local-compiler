@@ -1,4 +1,4 @@
 pep8:
-		full: true
-		disable:
-				- E111
+  full: true
+  disable:
+    - E111

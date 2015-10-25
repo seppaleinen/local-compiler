@@ -2,3 +2,7 @@ pep8:
   full: true
   disable:
     - E111
+
+pylint:
+  disable:
+    - bad-indentation

@@ -1,0 +1,4 @@
+pep8:
+		full: true
+		disable:
+				- E111

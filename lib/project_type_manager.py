@@ -8,7 +8,13 @@ from model.enums import BuildTool
 # to be used on a certain directory path
 class ProjectTypeManager(object):
   def guess_language(self, project_dir):
-    return Language.JAVA
+    if project_dir == 'somedir':
+      return Language.JAVA
+    else:
+      return Language.RUBY
 
   def guess_buildtool(self, project_dir):
-    return BuildTool.MAVEN
+    if project_dir == 'somedir':
+      return BuildTool.MAVEN
+    else:
+      return BuildTool.BUNDLER

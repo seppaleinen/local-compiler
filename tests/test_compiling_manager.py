@@ -10,4 +10,4 @@ class doCompilerTests(unittest.TestCase):
 
   def test_compile_project(self):
     result = self.manager.compile_project('somedir')
-    self.assertEqual(result, '')
+    self.assertEqual(result, 'somedir')

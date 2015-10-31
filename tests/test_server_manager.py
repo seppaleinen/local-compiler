@@ -2,6 +2,7 @@
 
 import unittest
 from lib.server_manager import ServerManager
+from lib.model.compile_info import SERVER_DEPLOY_STATUS, SERVER_STATUS
 
 
 class doServerManagerTests(unittest.TestCase):
@@ -10,16 +11,16 @@ class doServerManagerTests(unittest.TestCase):
 
   def test_direct_deploy_to_server(self):
     result = self.manager.direct_deploy_to_server('somedir')
-    assert result == 'result'
+    self.assertEqual(result, SERVER_DEPLOY_STATUS.SUCCESS)
 
   def test_remote_deploy_to_server(self):
     result = self.manager.remote_deploy_to_server('somedir')
-    assert result == 'result'
+    self.assertEqual(result, SERVER_DEPLOY_STATUS.SUCCESS)
 
   def test_server_status(self):
     result = self.manager.server_status('somedir')
-    assert result == 'result'
+    self.assertEqual(result, SERVER_STATUS.ONLINE)
 
   def test_handle_server(self):
     result = self.manager.handle_server('somedir')
-    assert result == 'result'
+    self.assertEqual(result, SERVER_STATUS.ONLINE)

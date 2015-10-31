@@ -10,8 +10,8 @@ class doProjectTypeTests(unittest.TestCase):
 
   def test_guess_language(self):
     result = self.manager.guess_language('somedir')
-    assert result.value == 'JAVA'
+    self.assertEqual(result.value, 'JAVA')
 
   def test_guess_buildtool(self):
     result = self.manager.guess_buildtool('somedir')
-    assert result.value == 'MAVEN'
+    self.assertEqual(result.value, 'MAVEN')

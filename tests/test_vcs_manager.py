@@ -10,8 +10,8 @@ class doVcsManagerTests(unittest.TestCase):
 
   def test_status(self):
     result = self.manager.status('somedir')
-    assert result == 'result'
+    self.assertEqual(result, 'result')
 
   def test_update(self):
     result = self.manager.update('somedir')
-    assert result == 'result'
+    self.assertEqual(result, 'result')

@@ -10,7 +10,7 @@ class doWorkspaceManagerTests(unittest.TestCase):
     self.manager = WorkspaceManager()
 
   def test_add_project(self):
-    workspace = Workspace()
+    workspace = Workspace('somedir')
     project = Project('dir')
     result = self.manager.add_project(workspace, project)
 

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from lib.model.models import Workspace, Project
+from lib.model.models import Workspace
 
 
 class WorkspaceManager(object):
@@ -9,5 +9,5 @@ class WorkspaceManager(object):
     return workspace
 
   def find_vcs_projects(self, workspace_path):
-    workspace2 = Workspace()
-    return workspace2
+    workspace = Workspace(workspace_path)
+    return workspace

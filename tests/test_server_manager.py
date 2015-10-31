@@ -2,7 +2,7 @@
 
 import unittest
 from lib.server_manager import ServerManager
-from lib.model.compile_info import SERVER_DEPLOY_STATUS, SERVER_STATUS
+from lib.model.enums import SERVER_DEPLOY_STATUS, SERVER_STATUS
 
 
 class doServerManagerTests(unittest.TestCase):

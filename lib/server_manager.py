@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-from model.compile_info import SERVER_DEPLOY_STATUS
-from model.compile_info import SERVER_STATUS
+from model.enums import SERVER_DEPLOY_STATUS
+from model.enums import SERVER_STATUS
 
 # Class responsible for handling contact with server
 class ServerManager(object):

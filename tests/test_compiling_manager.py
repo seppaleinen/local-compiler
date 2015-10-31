@@ -8,6 +8,6 @@ class doCompilerTests(unittest.TestCase):
   def setUp(self):
     self.manager = CompilingManager()
 
-  def test_something(self):
-    result = self.manager.guess_project_language_and_builder('somedir')
-    assert result.value == 'JAVA'
+  def test_compile_project(self):
+    result = self.manager.compile_project('somedir')
+    assert result == ''

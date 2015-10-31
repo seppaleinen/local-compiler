@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+
 # Class responsible for handling contact with vcs repositories
 class VcsManager(object):
   # Method for checking version control status

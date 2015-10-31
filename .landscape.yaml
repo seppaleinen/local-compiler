@@ -2,6 +2,7 @@ pep8:
   full: true
   disable:
     - E111
+    - E114
 
 pylint:
   disable:

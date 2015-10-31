@@ -1,4 +1,12 @@
 from setuptools import setup
+from distutils.command.install import install
+import os
+
+class PostInstallClean(install):
+    # Calls the default run command, then deletes build directories
+    def run(self):
+        install.run(self)
+        os.system('rm -rf ./build ./dist ./*.pyc ./*.tgz ./*.egg-info')
     
 setup(
     name='local-compiler',
@@ -7,7 +15,7 @@ setup(
     author_email='david.eriksson@swedenmail.com',
     packages=[ 'lib' ],
     url='http://seppaleinen.github.io/local-compiler',
-    zip_safe=False,
+    zip_safe=True,
     license='GPLv3',
     description='Common library for managing version-control and compiling.',
     install_requires=[
@@ -21,4 +29,6 @@ setup(
         "mock==1.3.0",
     ],
     test_suite='tests',
+    cmdclass={'install': PostInstallClean,
+              'normal_install': install},
 )

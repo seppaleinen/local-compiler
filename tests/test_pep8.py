@@ -5,7 +5,7 @@ import pep8
 import os
 import os.path
 
-ignore_patterns = ('.svn', 'bin', 'lib' + os.sep + 'python')
+ignore_patterns = ('.svn', 'bin', '.git')
 
 
 def ignore(dir):

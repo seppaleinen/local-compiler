@@ -12,6 +12,8 @@ class WorkspaceManager(object):
   def find_vcs_projects(self, workspace_path):
     workspace = Workspace(workspace_path)
 
+    print(workspace_path)
+    print(os.walk(workspace_path))
     for root, dirs, files in os.walk(workspace_path):
       print(dirs)
       for name in dirs:

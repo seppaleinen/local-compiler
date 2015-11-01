@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
-import unittest, os
+import unittest
+import os
 from lib.workspace_manager import WorkspaceManager
 from lib.model.models import Workspace
 from lib.model.models import Project

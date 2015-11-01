@@ -5,8 +5,8 @@ import os
 class PostInstallClean(install):
     # Calls the default run command, then deletes build directories
     def run(self):
-        install.run(self)
         os.system('rm -rf ./build ./dist ./*.pyc ./*.tgz ./*.egg-info')
+        install.run(self)
     
 setup(
     name='local-compiler',
@@ -29,6 +29,5 @@ setup(
         "mock==1.3.0",
     ],
     test_suite='tests',
-    cmdclass={'install': PostInstallClean,
-              'normal_install': install},
+    cmdclass={'install': PostInstallClean},
 )

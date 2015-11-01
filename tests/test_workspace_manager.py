@@ -3,7 +3,7 @@
 import unittest, os
 from lib.workspace_manager import WorkspaceManager
 from lib.model.models import Workspace
-from liv.model.models import Project
+from lib.model.models import Project
 
 
 class doWorkspaceManager_add_projectTests(unittest.TestCase):

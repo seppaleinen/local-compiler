@@ -4,6 +4,8 @@ from lib.model.models import Workspace, Project
 import os
 
 
+# Class responsible for managing workspaces
+# Adding or removing projects from a workspace
 class WorkspaceManager(object):
   def add_project(self, workspace, project):
     workspace.project_list.append(project)

@@ -12,9 +12,6 @@ class WorkspaceManager(object):
   def find_vcs_projects(self, workspace_path):
     workspace = Workspace(workspace_path)
 
-    print(os.path.isdir(workspace_path))
-    print(os.path.exists(workspace_path))
-
     for root, dirs, files in os.walk(workspace_path):
       for name in dirs:
         if name == '.git':

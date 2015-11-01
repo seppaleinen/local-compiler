@@ -25,7 +25,6 @@ class doWorkspaceManager_find_vcs_projectsTests(unittest.TestCase):
   def test_find_vcs_projects(self):
     # Join basedir of this project to /tests/test_data/workspace_manager
     path = os.path.join(os.getcwd(), 'tests', 'test_data', 'workspace_manager')
-    print(path)
     
     result = self.manager.find_vcs_projects(path)
 

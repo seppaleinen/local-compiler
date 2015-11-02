@@ -4,10 +4,11 @@ from model.enums import BuildTool
 import subprocess
 import os
 
+
 def process(script):
   result = None
 
-  if(script != None):
+  if script is not None:
     result = subprocess.Popen(script, stdout=subprocess.PIPE).communicate()[0]
 
   return result
@@ -15,7 +16,6 @@ def process(script):
 
 class CompilingManager(object):
   def compile_project(self, project_dir, build_tool, custom_build_script=None):
-    result = None
     if(build_tool == BuildTool.SETUP_TOOLS):
       custom_build_script = ['python', os.path.join(project_dir, 'setup.py'), 'install']
     elif(build_tool == BuildTool.MAVEN):

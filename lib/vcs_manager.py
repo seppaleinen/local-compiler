@@ -3,8 +3,9 @@
 import subprocess
 import os
 
+
 def git_command(vcs_path, command):
-  git_dir=os.path.join(vcs_path, '.git')
+  git_dir = os.path.join(vcs_path, '.git')
 
   git_command = ['git', '--work-tree=' + vcs_path, '--git-dir=' + git_dir, command]
 

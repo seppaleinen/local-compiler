@@ -13,13 +13,14 @@ class VcsManager_status(unittest.TestCase):
   @mock.patch('lib.vcs_manager.subprocess')
   def test_status(self, mocked):
     base_dir = os.getcwd()
+    git_dir = os.path.join(base_dir, '.git')
 
     result = self.manager.status(base_dir)
 
     mocked.Popen.assert_called_with([
       'git', 
-      '--work-tree=/Users/seppa/Workspace/local-compiler', 
-      '--git-dir=/Users/seppa/Workspace/local-compiler/.git', 
+      '--work-tree=' + base_dir, 
+      '--git-dir=' + git_dir, 
       'status'], 
       stdout=mocked.PIPE)
 
@@ -31,12 +32,13 @@ class VcsManager_update(unittest.TestCase):
   @mock.patch('lib.vcs_manager.subprocess')
   def test_update(self, mocked):
     base_dir = os.getcwd()
+    git_dir = os.path.join(base_dir, '.git')
 
     result = self.manager.update(base_dir)
 
     mocked.Popen.assert_called_with([
       'git', 
-      '--work-tree=/Users/seppa/Workspace/local-compiler', 
-      '--git-dir=/Users/seppa/Workspace/local-compiler/.git', 
+      '--work-tree=' + base_dir, 
+      '--git-dir=' + git_dir, 
       'pull'], 
       stdout=mocked.PIPE)

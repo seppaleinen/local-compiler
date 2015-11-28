@@ -1,3 +1,5 @@
+.eggs
+*.iml
 *.pyc
 *egg-info/
 venv/

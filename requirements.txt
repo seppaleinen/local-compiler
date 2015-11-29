@@ -6,3 +6,4 @@ gitPython==1.0.1
 coverage==4.0.3
 coveralls==1.1
 codecov==1.6.3
+tox

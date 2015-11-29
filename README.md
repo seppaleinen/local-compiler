@@ -18,10 +18,15 @@
 </a>
 
 Commands to remember
-python setup.py test
-python setup.py clean
-python setup.py build
-python setup.py install
+python setup.py test;
+python setup.py clean;
+python setup.py build;
+python setup.py install;
+
+virtualenv venv;
+source venv/bin/activate;
+tox;
+deactivate;
 
 Missing modules
 

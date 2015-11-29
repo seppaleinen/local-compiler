@@ -8,3 +8,5 @@ dist/
 .coverage
 pep8-1.6.2-py2.7.egg/
 setuptools-18.4-py2.7.egg
+.cache/
+.tox/

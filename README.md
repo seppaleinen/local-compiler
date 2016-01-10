@@ -17,34 +17,36 @@
 	<img src="https://travis-ci.org/seppaleinen/local-compiler.svg?branch=master">
 </a>
 
-Commands to remember
-python setup.py test;
-python setup.py clean;
-python setup.py build;
-python setup.py install;
+##Commands to remember
 
-virtualenv venv;
-source venv/bin/activate;
-tox;
-deactivate;
+###Normal build commands
+`python setup.py clean;`
+`python setup.py test;`
+`python setup.py build;`
+`python setup.py install;`
 
-Missing modules
+###Test with tox
+`virtualenv venv;`
+`source venv/bin/activate;`
+`tox;`
+`deactivate;`
 
-# Compiler
-# 	 Estimate language/builder
-#	 Java
-#	 	Maven
-# 	 Python 
-# 	 	Setuptools
-#	 	Django 
-# 	 Ruby 
-# 	 	bundler
-# Workspace 
-#	 Search for projects
-# 	 Manually add project
-# 	 Manually remove project
-# Version-control
-# 	 Git
-# Server
-#    Get deployment dir
-# 	 Deploy 
+##Missing modules
+* Compiler
+* 	 Estimate language/builder
+*	 Java
+*	 	Maven
+* 	 Python 
+* 	 	Setuptools
+*	 	Django 
+* 	 Ruby 
+* 	 	bundler
+* Workspace 
+*	 Search for projects
+* 	 Manually add project
+* 	 Manually remove project
+* Version-control
+* 	 Git
+* Server
+*    Get deployment dir
+* 	 Deploy 

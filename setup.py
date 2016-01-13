@@ -25,7 +25,7 @@ setup(
     ],
     tests_require=[
         "gitPython==1.0.1",
-        "pep8==1.6.2",
+        "pep8==1.7.0",
         "mock==1.3.0",
     ],
     test_suite='tests',

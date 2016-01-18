@@ -20,7 +20,7 @@ setup(
     description='Common library for managing version-control and compiling.',
     install_requires=[
         "gitPython==1.0.1",
-        "setuptools==19.2",
+        "setuptools==19.4",
         "enum34==1.1.2",
     ],
     tests_require=[

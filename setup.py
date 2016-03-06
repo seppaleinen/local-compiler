@@ -19,12 +19,12 @@ setup(
     license='GPLv3',
     description='Common library for managing version-control and compiling.',
     install_requires=[
-        "gitPython==1.0.1",
-        "setuptools==20.0",
+        "gitPython==1.0.2",
+        "setuptools==20.2.2",
         "enum34==1.1.2",
     ],
     tests_require=[
-        "gitPython==1.0.1",
+        "gitPython==1.0.2",
         "pep8==1.7.0",
         "mock==1.3.0",
     ],
